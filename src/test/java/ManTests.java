@@ -1,4 +1,5 @@
 import Persons.Man;
+import Persons.Woman;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,7 +15,7 @@ public class ManTests {
 
     @Test
     public void testCheckSetLastName(){
-        String lastName = "Ivanovych";
+        String lastName = "Vynyuk";
         Man man = new Man();
         man.setLastName(lastName);
         Assert.assertEquals(man.getLastName(), lastName, String.format("last name '%s' not equal '%s'", man.getLastName(), lastName));
@@ -42,5 +43,23 @@ public class ManTests {
         Man man = new Man();
         man.setAge(age);
         Assert.assertEquals(man.isRetired(), false, "Man not retired");
+    }
+
+    @Test
+    public void testCheckManIsRetired(){
+        int age = 66;
+        Man man = new Man();
+        man.setAge(age);
+        Assert.assertEquals(man.isRetired(), true, "Man is on retired");
+    }
+
+    @Test
+    public void testCheckRegisterPartnership(){
+//        String lastNamePartnership = "Vynyuk";
+//        Woman woman = new Woman("Ira", "Vynyuk", 28)
+//
+//        Man man = new Man();
+//        man.setAge(age);
+//        Assert.assertEquals(man.isRetired(), true, "Man is on retired");
     }
 }
