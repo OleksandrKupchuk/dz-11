@@ -41,6 +41,8 @@ public abstract class Person {
         this.lastName = lastName;
     }
 
+    public String getPreviousLastName(){return previousLastName;}
+
     public int getAge(){
         return age;
     }
