@@ -6,7 +6,9 @@ public abstract class Person {
     private String partner;
     protected int retirementAge;
 
-    public Person(){}
+    public Person(){
+
+    }
 
     public Person(String firstName, String lastName, int age, String partner){
         this.firstName = firstName;
