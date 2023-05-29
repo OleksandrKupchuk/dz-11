@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="DZ-11">
+    <test name="Regression">
+        <packages>
+            <package name="PersonTests"></package>
+        </packages>
+    </test>
+</suite>
