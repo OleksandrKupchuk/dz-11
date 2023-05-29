@@ -55,11 +55,19 @@ public class ManTests {
 
     @Test
     public void testCheckRegisterPartnership(){
-//        String lastNamePartnership = "Vynyuk";
-//        Woman woman = new Woman("Ira", "Vynyuk", 28)
-//
-//        Man man = new Man();
-//        man.setAge(age);
-//        Assert.assertEquals(man.isRetired(), true, "Man is on retired");
+        Woman woman = new Woman("Ira", "Vynyuk", 28);
+        Man man = new Man();
+        man.registerPartnership(woman.getLastName());
+        Assert.assertEquals(man.getLastName(), woman.getLastName(),
+                String.format("Last name '%s' not equal last name his partner '%s'", man.getLastName(), woman.getLastName()));
+    }
+
+    @Test
+    public void testCheckDeregisterPartnership(){
+        Woman woman = new Woman("Ira", "Vynyuk", 28);
+        Man man = new Man("Oleksandr", "Levko", 27);
+        man.registerPartnership(woman.getLastName());
+        Assert.assertEquals(man.getLastName(), woman.getLastName(),
+                String.format("Last name '%s' not equal last name his partner '%s'", man.getLastName(), woman.getLastName()));
     }
 }
