@@ -2,7 +2,7 @@
 <suite name="DZ-11">
     <test name="Regression">
         <packages>
-            <package name="PersonTests"></package>
+            <package name="persontests"></package>
         </packages>
     </test>
 </suite>

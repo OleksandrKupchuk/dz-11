@@ -1,4 +1,4 @@
-package Persons;
+package persons;
 
 public class Woman extends Person {
     public Woman(){

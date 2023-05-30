@@ -1,6 +1,6 @@
-package PersonTests;
+package persontests;
 
-import Persons.*;
+import persons.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
