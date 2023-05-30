@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="DZ-11">
+    <test name="Properties">
+        <groups>
+            <run>
+                <include name="properties"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="persontests"></package>
+        </packages>
+    </test>
+</suite>
